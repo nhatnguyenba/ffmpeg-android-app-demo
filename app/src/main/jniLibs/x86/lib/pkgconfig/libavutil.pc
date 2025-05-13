@@ -1,0 +1,14 @@
+prefix=/home/nhat/Desktop/FFmpeg_Build/ffmpeg-android-output/i686-21
+exec_prefix=${prefix}
+libdir=/home/nhat/Desktop/FFmpeg_Build/ffmpeg-android-output/i686-21/lib
+includedir=/home/nhat/Desktop/FFmpeg_Build/ffmpeg-android-output/i686-21/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 59.39.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm -latomic -landroid -lmediandk
+Cflags: -I${includedir}

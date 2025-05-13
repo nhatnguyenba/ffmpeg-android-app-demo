@@ -1,0 +1,14 @@
+prefix=/home/nhat/Desktop/FFmpeg_Build/ffmpeg-android-output/x86_64-21
+exec_prefix=${prefix}
+libdir=/home/nhat/Desktop/FFmpeg_Build/ffmpeg-android-output/x86_64-21/lib
+includedir=/home/nhat/Desktop/FFmpeg_Build/ffmpeg-android-output/x86_64-21/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 61.19.101
+Requires: 
+Requires.private: libswresample >= 5.3.100, libavutil >= 59.39.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -pthread -lm -latomic
+Cflags: -I${includedir}
